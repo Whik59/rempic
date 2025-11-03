@@ -1,0 +1,54 @@
+<svg width="600" height="1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="1200" fill="#F8FAFC"/>
+  
+  <!-- Header -->
+  <rect width="600" height="120" fill="url(#grad1)"/>
+  <text x="300" y="70" font-family="Arial" font-size="32" fill="white" text-anchor="middle" font-weight="bold">REMPIC</text>
+  
+  <!-- Cards Section -->
+  <rect x="40" y="160" width="520" height="200" rx="20" fill="#fff" stroke="#E5E7EB" stroke-width="2"/>
+  <rect x="60" y="180" width="480" height="30" rx="5" fill="url(#grad1)"/>
+  <text x="300" y="205" font-family="Arial" font-size="18" fill="white" text-anchor="middle" font-weight="bold">Visa Card</text>
+  <rect x="60" y="230" width="200" height="20" rx="5" fill="#E5E7EB"/>
+  <rect x="60" y="260" width="150" height="20" rx="5" fill="#E5E7EB"/>
+  <text x="480" y="340" font-family="Arial" font-size="32" fill="#6366F1" text-anchor="end" font-weight="bold">$2,549.95</text>
+  
+  <!-- Transactions -->
+  <text x="40" y="420" font-family="Arial" font-size="24" fill="#1E293B" font-weight="bold">Recent Transactions</text>
+  
+  <!-- Transaction 1 -->
+  <rect x="40" y="450" width="520" height="80" rx="15" fill="#fff" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="80" cy="490" r="25" fill="#10B981" opacity="0.2"/>
+  <text x="120" y="485" font-family="Arial" font-size="18" fill="#1E293B" font-weight="600">Bank Transfer</text>
+  <text x="120" y="505" font-family="Arial" font-size="14" fill="#64748B">Yesterday</text>
+  <text x="520" y="490" font-family="Arial" font-size="18" fill="#10B981" text-anchor="end" font-weight="bold">+$234.00</text>
+  
+  <!-- Transaction 2 -->
+  <rect x="40" y="550" width="520" height="80" rx="15" fill="#fff" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="80" cy="590" r="25" fill="#EC4899" opacity="0.2"/>
+  <text x="120" y="585" font-family="Arial" font-size="18" fill="#1E293B" font-weight="600">Coffee Shop</text>
+  <text x="120" y="605" font-family="Arial" font-size="14" fill="#64748B">Nov 1, 2025</text>
+  <text x="520" y="590" font-family="Arial" font-size="18" fill="#EF4444" text-anchor="end" font-weight="bold">-$8.47</text>
+  
+  <!-- Transaction 3 -->
+  <rect x="40" y="650" width="520" height="80" rx="15" fill="#fff" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="80" cy="690" r="25" fill="#06B6D4" opacity="0.2"/>
+  <text x="120" y="685" font-family="Arial" font-size="18" fill="#1E293B" font-weight="600">Flat Rental</text>
+  <text x="120" y="705" font-family="Arial" font-size="14" fill="#64748B">Oct 30, 2025</text>
+  <text x="520" y="690" font-family="Arial" font-size="18" fill="#EF4444" text-anchor="end" font-weight="bold">-$1,245.00</text>
+  
+  <!-- Bottom Navigation -->
+  <rect y="1100" width="600" height="100" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="120" cy="1140" r="20" fill="url(#grad1)"/>
+  <circle cx="300" cy="1140" r="20" fill="#E5E7EB"/>
+  <circle cx="480" cy="1140" r="20" fill="#E5E7EB"/>
+  
+  <text x="300" y="1180" font-family="Arial" font-size="12" fill="#64748B" text-anchor="middle">Replace this with your actual app screenshot</text>
+</svg>
+

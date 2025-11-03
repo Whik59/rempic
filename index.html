@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMPIC - A New Kind of Banking</title>
+    <meta name="description" content="Experience the future of banking with REMPIC. Send money worldwide, manage multiple currencies, and enjoy seamless digital banking.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <svg class="logo-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="hexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Hexagon Background -->
+                        <path d="M24 2L42 12.5V33.5L24 44L6 33.5V12.5L24 2Z" fill="url(#hexGradient)"/>
+                        <!-- Inner Hexagon Border -->
+                        <path d="M24 6L38 14V32L24 40L10 32V14L24 6Z" stroke="white" stroke-width="1.5" fill="none" opacity="0.3"/>
+                        <!-- Dollar Sign Circle -->
+                        <circle cx="24" cy="24" r="10" stroke="white" stroke-width="2.5" fill="none"/>
+                        <circle cx="24" cy="24" r="7" stroke="white" stroke-width="1.5" fill="none" opacity="0.4"/>
+                        <!-- Dollar Symbol -->
+                        <path d="M24 16v16M20 19h6c1.1 0 2 .9 2 2s-.9 2-2 2h-4c-1.1 0-2 .9-2 2s.9 2 2 2h6" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                    <span class="logo-text">REMPIC</span>
+                </a>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#benefits" class="nav-link">Benefits</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="btn btn-secondary">Sign In</button>
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <span class="badge">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 0L10 6L16 8L10 10L8 16L6 10L0 8L6 6L8 0Z" fill="currentColor"/>
+                        </svg>
+                        Pay in one click
+                    </span>
+                    <h1 class="hero-title">
+                        A new kind of
+                        <span class="gradient-text">Banking</span>
+                    </h1>
+                    <p class="hero-description">
+                        The new generation of global banking starts here. Send, receive, and exchange money worldwide with zero fees. Experience seamless payments in real currency with the exchange rate that truly matters – all in one bank account.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="btn btn-large btn-primary">
+                            Get Started
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="btn btn-large btn-outline">
+                            Learn More
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15K+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">400K+</div>
+                            <div class="stat-label">Monthly Users</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="phone-mockup-simple">
+                        <img src="public/rempic.png" alt="Rempic App Interface" class="phone-screenshot-direct">
+                        <div class="floating-credit-card">
+                            <img src="public/card.png" alt="REMPIC Credit Card" class="credit-card-image">
+                        </div>
+                        <div class="floating-card card-1">
+                            <div class="card-icon success">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-label">Transfer Successful</div>
+                                <div class="card-value">$2,500.95</div>
+                            </div>
+                        </div>
+                        <div class="floating-card card-2">
+                            <div class="card-icon">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M8 5V8L10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-label">Instant Processing</div>
+                                <div class="card-value">0.5s</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Join us</span>
+                <h2 class="section-title">Money Management <span class="gradient-text">Made Easy</span></h2>
+                <p class="section-description">Manage your finances effortlessly with powerful tools designed for the modern world</p>
+                <div class="header-card-showcase">
+                    <img src="public/card.png" alt="REMPIC Virtual Card" class="showcase-credit-card">
+                </div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 28c6.627 0 12-5.373 12-12S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12z" stroke="url(#iconGradient1)" stroke-width="2" fill="none"/>
+                            <path d="M16 8v8M16 16l4 4" stroke="url(#iconGradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 12h-8M20 20h-8" stroke="url(#iconGradient1)" stroke-width="1.5" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="iconGradient1" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#6366F1"/>
+                                    <stop offset="100%" stop-color="#EC4899"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Multi-currency Accounts</h3>
+                    <p class="feature-description">Hold, send, and receive money in multiple currencies with competitive exchange rates and zero hidden fees.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="4" y="8" width="24" height="16" rx="3" stroke="url(#iconGradient2)" stroke-width="2"/>
+                            <path d="M4 14h24M10 18h4" stroke="url(#iconGradient2)" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="23" cy="18" r="1.5" fill="url(#iconGradient2)"/>
+                            <defs>
+                                <linearGradient id="iconGradient2" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#8B5CF6"/>
+                                    <stop offset="100%" stop-color="#EC4899"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Digital Wallet</h3>
+                    <p class="feature-description">Store your payment methods securely and make instant transactions with advanced encryption technology.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="11" r="5" stroke="url(#iconGradient3)" stroke-width="2"/>
+                            <path d="M6 26c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="url(#iconGradient3)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="iconGradient3" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#EC4899"/>
+                                    <stop offset="100%" stop-color="#F43F5E"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Personal Accounts</h3>
+                    <p class="feature-description">Get personalized banking experience with tailored insights, budgeting tools, and financial recommendations.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="4" y="8" width="24" height="16" rx="2" stroke="url(#iconGradient4)" stroke-width="2"/>
+                            <path d="M16 8V24M12 16h8" stroke="url(#iconGradient4)" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 8V4M24 8V4M8 24v4M24 24v4" stroke="url(#iconGradient4)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="iconGradient4" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#6366F1"/>
+                                    <stop offset="100%" stop-color="#8B5CF6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Business Accounts</h3>
+                    <p class="feature-description">Scale your business with corporate accounts, team management, and advanced analytics dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="benefits-layout">
+                <div class="benefits-image" data-aos="fade-right">
+                    <div class="benefits-phone-simple">
+                        <img src="public/features.png" alt="Banking Features - Money Management Made Easy" class="benefits-screenshot">
+                    </div>
+                </div>
+                <div class="benefits-content" data-aos="fade-left">
+                    <span class="section-label">Banking at Your Fingertips</span>
+                    <h2 class="section-title">Everything You Get with <span class="gradient-text">REMPIC</span></h2>
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" fill="url(#benefitGradient)" opacity="0.1"/>
+                                    <path d="M8 12l3 3 5-5" stroke="url(#benefitGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Online Banking with Perks</h4>
+                                <p>Manage your bank accounts on-the-go, track expenses, and set savings goals – all in real time.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" fill="url(#benefitGradient)" opacity="0.1"/>
+                                    <path d="M8 12l3 3 5-5" stroke="url(#benefitGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Sending Money in an Easy Way</h4>
+                                <p>Wire transfers in just a few taps. Send money to anyone, anywhere – it will take you no more than a few clicks.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" fill="url(#benefitGradient)" opacity="0.1"/>
+                                    <path d="M8 12l3 3 5-5" stroke="url(#benefitGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Getting Paid Just Got Easier</h4>
+                                <p>Receive payments from your clients or withdraw assets. Get your account number in minutes.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" fill="url(#benefitGradient)" opacity="0.1"/>
+                                    <path d="M8 12l3 3 5-5" stroke="url(#benefitGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>Different Currencies in One Place</h4>
+                                <p>Hold multiple currencies in one bank account. Competitive pricing on each exchange rate.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" fill="url(#benefitGradient)" opacity="0.1"/>
+                                    <path d="M8 12l3 3 5-5" stroke="url(#benefitGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>End-to-End Security</h4>
+                                <p>Thanks to our Canadian banking license, we keep your money secure and safe.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" fill="url(#benefitGradient)" opacity="0.1"/>
+                                    <path d="M8 12l3 3 5-5" stroke="url(#benefitGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="benefit-text">
+                                <h4>100% Transparency</h4>
+                                <p>Our goal is to bring transparency to finance. With no hidden fees, no size exchange rates or no surprises.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg width="0" height="0">
+            <defs>
+                <linearGradient id="benefitGradient" x1="0" y1="0" x2="24" y2="24">
+                    <stop offset="0%" stop-color="#6366F1"/>
+                    <stop offset="100%" stop-color="#EC4899"/>
+                </linearGradient>
+            </defs>
+        </svg>
+    </section>
+
+    <!-- Additional Features Section -->
+    <section class="additional-features">
+        <div class="container">
+            <div class="features-showcase">
+                <div class="showcase-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="showcase-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="url(#showcaseGradient1)" opacity="0.1"/>
+                            <path d="M24 12c-4.418 0-8 3.582-8 8 0 1.287.305 2.503.846 3.577L14 32l4.894-2.447A7.965 7.965 0 0024 31c4.418 0 8-3.582 8-8s-3.582-11-8-11z" stroke="url(#showcaseGradient1)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="29" cy="15" r="4" fill="url(#showcaseGradient1)"/>
+                            <path d="M20 20h8M20 24h5" stroke="url(#showcaseGradient1)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="showcaseGradient1" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#6366F1"/>
+                                    <stop offset="100%" stop-color="#8B5CF6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Instant Notifications</h3>
+                    <p>Receive real-time push notifications for all the transactions in your account or wallet.</p>
+                </div>
+                <div class="showcase-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="showcase-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="url(#showcaseGradient2)" opacity="0.1"/>
+                            <rect x="15" y="10" width="18" height="28" rx="3" stroke="url(#showcaseGradient2)" stroke-width="2.5"/>
+                            <path d="M15 15h18M15 33h18" stroke="url(#showcaseGradient2)" stroke-width="2.5" stroke-linecap="round"/>
+                            <rect x="19" y="19" width="4" height="4" rx="1" fill="url(#showcaseGradient2)"/>
+                            <rect x="25" y="19" width="4" height="4" rx="1" fill="url(#showcaseGradient2)"/>
+                            <rect x="19" y="25" width="4" height="4" rx="1" fill="url(#showcaseGradient2)"/>
+                            <rect x="25" y="25" width="4" height="4" rx="1" fill="url(#showcaseGradient2)"/>
+                            <defs>
+                                <linearGradient id="showcaseGradient2" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#EC4899"/>
+                                    <stop offset="100%" stop-color="#F43F5E"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Beautiful, Intuitive Tools</h3>
+                    <p>Simple, easy-to-navigate mobile app and secure platform.</p>
+                </div>
+                <div class="showcase-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="showcase-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="url(#showcaseGradient3)" opacity="0.1"/>
+                            <circle cx="24" cy="24" r="11" stroke="url(#showcaseGradient3)" stroke-width="2.5"/>
+                            <path d="M24 13v22M35 24H13" stroke="url(#showcaseGradient3)" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M30 18c-1.5-2.5-4-4-6-4s-4.5 1.5-6 4" stroke="url(#showcaseGradient3)" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M18 30c1.5 2.5 4 4 6 4s4.5-1.5 6-4" stroke="url(#showcaseGradient3)" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="17" cy="20" r="1.5" fill="url(#showcaseGradient3)"/>
+                            <circle cx="31" cy="28" r="1.5" fill="url(#showcaseGradient3)"/>
+                            <defs>
+                                <linearGradient id="showcaseGradient3" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#8B5CF6"/>
+                                    <stop offset="100%" stop-color="#EC4899"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>No Fees Overseas</h3>
+                    <p>We offer attractive rates because you shouldn't have to pay over the odds for currency.</p>
+                </div>
+                <div class="showcase-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="showcase-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="url(#showcaseGradient4)" opacity="0.1"/>
+                            <rect x="15" y="10" width="18" height="28" rx="3" stroke="url(#showcaseGradient4)" stroke-width="2.5"/>
+                            <path d="M15 15h18M15 33h18" stroke="url(#showcaseGradient4)" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M19 20h10M19 24h10M19 28h6" stroke="url(#showcaseGradient4)" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="27" cy="28" r="1.5" fill="url(#showcaseGradient4)"/>
+                            <path d="M21 19v2M27 19v2" stroke="url(#showcaseGradient4)" stroke-width="1.5" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="showcaseGradient4" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#6366F1"/>
+                                    <stop offset="100%" stop-color="#EC4899"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>A Branch that Lives on Your Phone</h3>
+                    <p>Control your cash in finance from your smartphone or tablet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner Section -->
+    <section class="cta-banner-section" id="about">
+        <div class="container">
+            <div class="cta-banner-layout">
+                <div class="cta-banner-content" data-aos="fade-right">
+                    <span class="section-label">Online Banking</span>
+                    <h2 class="section-title">Apply for a Bank Account and Enjoy an Easy<br><span class="gradient-text">Day-to-Day Money Management</span></h2>
+                    <p class="cta-description">Join thousands of satisfied customers who have transformed their banking experience. Get instant access to multi-currency accounts, seamless transfers, and real-time analytics.</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-large btn-primary">
+                            Get Started Today
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="download-badges">
+                            <a href="#" class="download-badge">
+                                <svg width="20" height="20" viewBox="-52.01 0 560.035 560.035" fill="currentColor">
+                                    <path d="M380.844 297.529c.787 84.752 74.349 112.955 75.164 113.314-.622 1.988-11.754 40.191-38.756 79.652-23.343 34.117-47.568 68.107-85.731 68.811-37.499.691-49.557-22.236-92.429-22.236-42.859 0-56.256 21.533-91.753 22.928-36.837 1.395-64.889-36.891-88.424-70.883-48.093-69.53-84.846-196.475-35.496-282.165 24.516-42.554 68.328-69.501 115.882-70.192 36.173-.69 70.315 24.336 92.429 24.336 22.1 0 63.59-30.096 107.208-25.676 18.26.76 69.517 7.376 102.429 55.552-2.652 1.644-61.159 35.704-60.523 106.559M310.369 89.418C329.926 65.745 343.089 32.79 339.498 0 311.308 1.133 277.22 18.785 257 42.445c-18.121 20.952-33.991 54.487-29.709 86.628 31.421 2.431 63.52-15.967 83.078-39.655"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="download-badge">
+                                <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
+                                    <mask id="mask0_cta" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="3" width="24" height="26">
+                                        <path d="M30.0484 14.4004C31.3172 15.0986 31.3172 16.9014 30.0484 17.5996L9.75627 28.7659C8.52052 29.4459 7 28.5634 7 27.1663L7 4.83374C7 3.43657 8.52052 2.55415 9.75627 3.23415L30.0484 14.4004Z" fill="#C4C4C4"/>
+                                    </mask>
+                                    <g mask="url(#mask0_cta)">
+                                        <path d="M7.63473 28.5466L20.2923 15.8179L7.84319 3.29883C7.34653 3.61721 7 4.1669 7 4.8339V27.1664C7 27.7355 7.25223 28.2191 7.63473 28.5466Z" fill="#00C3FF"/>
+                                        <path d="M30.048 14.4003C31.3169 15.0985 31.3169 16.9012 30.048 17.5994L24.9287 20.4165L20.292 15.8175L24.6923 11.4531L30.048 14.4003Z" fill="#FFCE00"/>
+                                        <path d="M24.9292 20.4168L20.2924 15.8179L7.63477 28.5466C8.19139 29.0232 9.02389 29.1691 9.75635 28.766L24.9292 20.4168Z" fill="#DE2453"/>
+                                        <path d="M7.84277 3.29865L20.2919 15.8177L24.6922 11.4533L9.75583 3.23415C9.11003 2.87878 8.38646 2.95013 7.84277 3.29865Z" fill="#11D574"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cta-stats">
+                        <div class="cta-stat">
+                            <div class="cta-stat-number">15,000+</div>
+                            <div class="cta-stat-label">Active Users</div>
+                        </div>
+                        <div class="cta-stat">
+                            <div class="cta-stat-number">4.9/5</div>
+                            <div class="cta-stat-label">User Rating</div>
+                        </div>
+                        <div class="cta-stat">
+                            <div class="cta-stat-number">24/7</div>
+                            <div class="cta-stat-label">Support</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-banner-image" data-aos="fade-left">
+                    <img src="public/banner.png" alt="REMPIC Banking App - Manage Your Accounts" class="banner-phone">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section class="getting-started">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Getting started</span>
+                <h2 class="section-title">How to get your account set up<br>in <span class="gradient-text">just minutes?</span></h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="10" r="5" stroke="url(#stepGradient)" stroke-width="2"/>
+                            <path d="M6 26c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="url(#stepGradient)" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M22 24l2 2 4-4" stroke="url(#stepGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="stepGradient" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#6366F1"/>
+                                    <stop offset="100%" stop-color="#EC4899"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Quick Registration</h3>
+                    <p>Sign up online with your email address.</p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="4" y="8" width="24" height="16" rx="2" stroke="url(#stepGradient2)" stroke-width="2"/>
+                            <circle cx="12" cy="14" r="3" stroke="url(#stepGradient2)" stroke-width="1.5"/>
+                            <path d="M8 22c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="url(#stepGradient2)" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M18 12h6M18 16h6M18 20h4" stroke="url(#stepGradient2)" stroke-width="1.5" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="stepGradient2" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#8B5CF6"/>
+                                    <stop offset="100%" stop-color="#EC4899"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Identity Check</h3>
+                    <p>Your government ID is needed.</p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M28 10v12c0 2.2-1.8 4-4 4H8c-2.2 0-4-1.8-4-4V10c0-2.2 1.8-4 4-4h16c2.2 0 4 1.8 4 4z" stroke="url(#stepGradient3)" stroke-width="2"/>
+                            <circle cx="16" cy="16" r="5" stroke="url(#stepGradient3)" stroke-width="2"/>
+                            <path d="M16 13v6M13 16h6" stroke="url(#stepGradient3)" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="stepGradient3" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#EC4899"/>
+                                    <stop offset="100%" stop-color="#F43F5E"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Adding Money</h3>
+                    <p>Charge your account using Interac or virtual assets.</p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 28c6.627 0 12-5.373 12-12S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12z" stroke="url(#stepGradient4)" stroke-width="2"/>
+                            <path d="M10 16l4 4 8-8" stroke="url(#stepGradient4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="stepGradient4" x1="0" y1="0" x2="32" y2="32">
+                                    <stop offset="0%" stop-color="#6366F1"/>
+                                    <stop offset="100%" stop-color="#8B5CF6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>You Are Good to Pay!</h3>
+                    <p>With your account details, you can now enjoy all the services Rempic has to offer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <svg class="footer-logo-icon" width="56" height="56" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="hexGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#06B6D4;stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M24 2L42 12.5V33.5L24 44L6 33.5V12.5L24 2Z" fill="url(#hexGradientFooter)"/>
+                            <path d="M24 6L38 14V32L24 40L10 32V14L24 6Z" stroke="white" stroke-width="1.5" fill="none" opacity="0.3"/>
+                            <circle cx="24" cy="24" r="10" stroke="white" stroke-width="2.5" fill="none"/>
+                            <circle cx="24" cy="24" r="7" stroke="white" stroke-width="1.5" fill="none" opacity="0.4"/>
+                            <path d="M24 16v16M20 19h6c1.1 0 2 .9 2 2s-.9 2-2 2h-4c-1.1 0-2 .9-2 2s.9 2 2 2h6" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                        <div class="footer-logo-content">
+                            <span class="footer-logo-text">REMPIC</span>
+                            <span class="footer-logo-tagline">Pay in One Click</span>
+                        </div>
+                    </a>
+                    <p class="footer-description">The new generation of global banking system that costs less, send, spend and save in multiple currencies all in the same bank account.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm3.5 7.5h-1.5c-.275 0-.5.225-.5.5v1h2l-.25 2H11.5v5.5h-2V11h-1.5V9h1.5V7.5c0-1.379 1.121-2.5 2.5-2.5h1.5v2z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M19.555 4.444c-.72.32-1.493.537-2.305.634a4.03 4.03 0 0 0 1.763-2.22 8.06 8.06 0 0 1-2.55.975A4.015 4.015 0 0 0 13.53 2.5c-2.225 0-4.027 1.803-4.027 4.027 0 .316.036.623.105.918A11.43 11.43 0 0 1 1.312 3.28a4.006 4.006 0 0 0-.545 2.025c0 1.397.71 2.629 1.79 3.35a4.007 4.007 0 0 1-1.824-.503v.05c0 1.951 1.388 3.579 3.23 3.95a4.033 4.033 0 0 1-1.818.069 4.028 4.028 0 0 0 3.76 2.795A8.07 8.07 0 0 1 .445 16.56a11.38 11.38 0 0 0 6.162 1.806c7.394 0 11.436-6.125 11.436-11.436 0-.174-.004-.348-.012-.52a8.17 8.17 0 0 0 2.005-2.078" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm3.5 10.5h-3v7h-3v-7h-2V8h2V6.5c0-1.93 1.07-3 3-3h2v2.5h-1.5c-.55 0-1 .45-1 1V8h2.5l-.5 2.5z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 1.802c2.67 0 2.987.01 4.041.059 2.71.123 3.976 1.409 4.098 4.098.05 1.054.058 1.37.058 4.041 0 2.67-.01 2.987-.058 4.041-.123 2.687-1.387 3.975-4.098 4.098-1.054.05-1.37.058-4.041.058-2.67 0-2.987-.01-4.041-.058-2.714-.124-3.976-1.414-4.098-4.098-.05-1.054-.058-1.37-.058-4.041 0-2.67.01-2.987.058-4.041.124-2.69 1.387-3.976 4.098-4.098 1.054-.05 1.37-.059 4.041-.059zM10 0C7.284 0 6.944.012 5.877.06 2.246.227.226 2.242.06 5.877.012 6.944 0 7.284 0 10s.012 3.057.06 4.123c.166 3.632 2.181 5.65 5.817 5.817C6.944 19.988 7.284 20 10 20s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.817-5.817.048-1.066.06-1.407.06-4.123s-.012-3.057-.06-4.123C19.773 2.245 17.755.228 14.123.06 13.057.012 12.716 0 10 0zm0 4.865a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27zM10 13.333A3.333 3.333 0 1 1 10 6.667a3.333 3.333 0 0 1 0 6.666zm5.338-9.01a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Partners</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Referral Programme</a></li>
+                        <li><a href="#">Landing Partnership</a></li>
+                        <li><a href="#">Programme</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Mobile App</h4>
+                    <div class="app-badges">
+                        <a href="#" class="app-badge">
+                            <div class="badge-icon">
+                                <svg width="24" height="24" viewBox="-52.01 0 560.035 560.035" fill="currentColor">
+                                    <path d="M380.844 297.529c.787 84.752 74.349 112.955 75.164 113.314-.622 1.988-11.754 40.191-38.756 79.652-23.343 34.117-47.568 68.107-85.731 68.811-37.499.691-49.557-22.236-92.429-22.236-42.859 0-56.256 21.533-91.753 22.928-36.837 1.395-64.889-36.891-88.424-70.883-48.093-69.53-84.846-196.475-35.496-282.165 24.516-42.554 68.328-69.501 115.882-70.192 36.173-.69 70.315 24.336 92.429 24.336 22.1 0 63.59-30.096 107.208-25.676 18.26.76 69.517 7.376 102.429 55.552-2.652 1.644-61.159 35.704-60.523 106.559M310.369 89.418C329.926 65.745 343.089 32.79 339.498 0 311.308 1.133 277.22 18.785 257 42.445c-18.121 20.952-33.991 54.487-29.709 86.628 31.421 2.431 63.52-15.967 83.078-39.655"/>
+                                </svg>
+                            </div>
+                            <div class="badge-text">
+                                <span class="badge-subtitle">Download on the</span>
+                                <span class="badge-title">App Store</span>
+                            </div>
+                        </a>
+                        <a href="#" class="app-badge">
+                            <div class="badge-icon">
+                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                                    <mask id="mask0_footer" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="3" width="24" height="26">
+                                        <path d="M30.0484 14.4004C31.3172 15.0986 31.3172 16.9014 30.0484 17.5996L9.75627 28.7659C8.52052 29.4459 7 28.5634 7 27.1663L7 4.83374C7 3.43657 8.52052 2.55415 9.75627 3.23415L30.0484 14.4004Z" fill="#C4C4C4"/>
+                                    </mask>
+                                    <g mask="url(#mask0_footer)">
+                                        <path d="M7.63473 28.5466L20.2923 15.8179L7.84319 3.29883C7.34653 3.61721 7 4.1669 7 4.8339V27.1664C7 27.7355 7.25223 28.2191 7.63473 28.5466Z" fill="#00C3FF"/>
+                                        <path d="M30.048 14.4003C31.3169 15.0985 31.3169 16.9012 30.048 17.5994L24.9287 20.4165L20.292 15.8175L24.6923 11.4531L30.048 14.4003Z" fill="#FFCE00"/>
+                                        <path d="M24.9292 20.4168L20.2924 15.8179L7.63477 28.5466C8.19139 29.0232 9.02389 29.1691 9.75635 28.766L24.9292 20.4168Z" fill="#DE2453"/>
+                                        <path d="M7.84277 3.29865L20.2919 15.8177L24.6922 11.4533L9.75583 3.23415C9.11003 2.87878 8.38646 2.95013 7.84277 3.29865Z" fill="#11D574"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="badge-text">
+                                <span class="badge-subtitle">GET IT ON</span>
+                                <span class="badge-title">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 REMPIC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

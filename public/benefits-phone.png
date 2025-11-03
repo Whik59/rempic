@@ -1,0 +1,74 @@
+<svg width="600" height="1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="1200" fill="#F8FAFC"/>
+  
+  <!-- Header -->
+  <rect width="600" height="100" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="300" y="60" font-family="Arial" font-size="28" fill="#1E293B" text-anchor="middle" font-weight="bold">Accounts</text>
+  
+  <!-- Account Card 1 -->
+  <rect x="40" y="140" width="520" height="150" rx="20" fill="url(#grad2)"/>
+  <text x="70" y="180" font-family="Arial" font-size="16" fill="white" opacity="0.9">Upgrade your account</text>
+  <text x="70" y="240" font-family="Arial" font-size="42" fill="white" font-weight="bold">$2949.95</text>
+  <text x="70" y="270" font-family="Arial" font-size="14" fill="white" opacity="0.8">Available Balance</text>
+  <circle cx="520" cy="170" r="25" fill="white" opacity="0.2"/>
+  <text x="520" y="178" font-family="Arial" font-size="20" fill="white" text-anchor="middle">→</text>
+  
+  <!-- Balance indicator -->
+  <rect x="70" y="300" width="200" height="8" rx="4" fill="white" opacity="0.3"/>
+  <rect x="70" y="300" width="150" height="8" rx="4" fill="white"/>
+  <text x="280" y="308" font-family="Arial" font-size="14" fill="white">82%</text>
+  
+  <!-- Account Card 2 -->
+  <rect x="40" y="340" width="520" height="120" rx="20" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="80" cy="380" r="25" fill="#10B981" opacity="0.2"/>
+  <text x="80" y="388" font-family="Arial" font-size="20" fill="#10B981" text-anchor="middle" font-weight="bold">$</text>
+  <text x="120" y="375" font-family="Arial" font-size="18" fill="#1E293B" font-weight="600">Savings Account</text>
+  <text x="120" y="395" font-family="Arial" font-size="14" fill="#64748B">Main savings</text>
+  <text x="520" y="380" font-family="Arial" font-size="24" fill="#10B981" text-anchor="end" font-weight="bold">$832.42</text>
+  <text x="520" y="405" font-family="Arial" font-size="14" fill="#10B981" text-anchor="end">+3.4%</text>
+  <rect x="120" y="410" width="400" height="6" rx="3" fill="#E5E7EB"/>
+  <rect x="120" y="410" width="120" height="6" rx="3" fill="#10B981"/>
+  
+  <!-- Account Card 3 -->
+  <rect x="40" y="480" width="520" height="120" rx="20" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="80" cy="520" r="25" fill="#F59E0B" opacity="0.2"/>
+  <text x="80" y="528" font-family="Arial" font-size="20" fill="#F59E0B" text-anchor="middle" font-weight="bold">€</text>
+  <text x="120" y="515" font-family="Arial" font-size="18" fill="#1E293B" font-weight="600">Euro Account</text>
+  <text x="120" y="535" font-family="Arial" font-size="14" fill="#64748B">EUR wallet</text>
+  <text x="520" y="520" font-family="Arial" font-size="24" fill="#1E293B" text-anchor="end" font-weight="bold">€1,332.42</text>
+  <text x="520" y="545" font-family="Arial" font-size="14" fill="#10B981" text-anchor="end">+2.8%</text>
+  <rect x="120" y="550" width="400" height="6" rx="3" fill="#E5E7EB"/>
+  <rect x="120" y="550" width="280" height="6" rx="3" fill="#F59E0B"/>
+  
+  <!-- Quick Actions -->
+  <text x="40" y="650" font-family="Arial" font-size="20" fill="#1E293B" font-weight="bold">Quick Actions</text>
+  
+  <rect x="40" y="670" width="120" height="100" rx="15" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="100" cy="710" r="20" fill="#6366F1" opacity="0.2"/>
+  <text x="100" y="718" font-family="Arial" font-size="18" fill="#6366F1" text-anchor="middle" font-weight="bold">↑</text>
+  <text x="100" y="755" font-family="Arial" font-size="14" fill="#1E293B" text-anchor="middle">Send</text>
+  
+  <rect x="180" y="670" width="120" height="100" rx="15" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="240" cy="710" r="20" fill="#10B981" opacity="0.2"/>
+  <text x="240" y="718" font-family="Arial" font-size="18" fill="#10B981" text-anchor="middle" font-weight="bold">↓</text>
+  <text x="240" y="755" font-family="Arial" font-size="14" fill="#1E293B" text-anchor="middle">Receive</text>
+  
+  <rect x="320" y="670" width="120" height="100" rx="15" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="380" cy="710" r="20" fill="#EC4899" opacity="0.2"/>
+  <text x="380" y="718" font-family="Arial" font-size="18" fill="#EC4899" text-anchor="middle" font-weight="bold">⟳</text>
+  <text x="380" y="755" font-family="Arial" font-size="14" fill="#1E293B" text-anchor="middle">Exchange</text>
+  
+  <rect x="460" y="670" width="100" height="100" rx="15" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="510" cy="710" r="20" fill="#06B6D4" opacity="0.2"/>
+  <text x="510" y="718" font-family="Arial" font-size="18" fill="#06B6D4" text-anchor="middle" font-weight="bold">+</text>
+  <text x="510" y="755" font-family="Arial" font-size="14" fill="#1E293B" text-anchor="middle">More</text>
+  
+  <text x="300" y="1180" font-family="Arial" font-size="12" fill="#64748B" text-anchor="middle">Replace this with your actual app screenshot</text>
+</svg>
+
